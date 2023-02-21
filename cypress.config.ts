@@ -3,6 +3,7 @@ import { defineConfig } from "cypress";
 export default defineConfig({
 
   e2e: {
+    // still failing after adding timeout
     defaultCommandTimeout: 5000,
     setupNodeEvents: (on, config) => {
       const isDev = config.watchForFileChanges;
